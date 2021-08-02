@@ -24,7 +24,6 @@ class ViewController: UIViewController {
         if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AInterfaceBuilderViewController") as? AInterfaceBuilderViewController {
             self.present(vc, animated: true)
 
-        }
-    }
+        }    }
 }
 

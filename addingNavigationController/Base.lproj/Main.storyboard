@@ -31,7 +31,6 @@
                                 <state key="normal" title="by Interface Builder "/>
                                 <connections>
                                     <action selector="onByInterfaceBuilderButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Iqx-C9-lwi"/>
-                                    <action selector="onPresentButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e3P-0U-Vxp"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -86,7 +85,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wkP-UK-4gH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1859" y="1017"/>
+            <point key="canvasLocation" x="1993" y="935"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="DQa-mW-qEL">

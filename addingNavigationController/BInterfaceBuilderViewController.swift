@@ -23,7 +23,6 @@ class BInterfaceBuilderViewController: UIViewController {
     }
     
     @objc func onNextButton(sender: UIButton) {
-        // 3. B뷰컨트롤러에서 push/present
         let yellowVC = YellowViewController()
         self.navigationController?.pushViewController(yellowVC, animated: true)
         //        yellowVC.modalPresentationStyle = .currentContext
