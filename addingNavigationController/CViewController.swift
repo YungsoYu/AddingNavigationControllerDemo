@@ -8,12 +8,12 @@
 
 import UIKit
 
-class YellowViewController: UIViewController {
+class CViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = .yellow
+        view.backgroundColor = .orange
     }
     
     override func viewWillLayoutSubviews() {
@@ -23,7 +23,11 @@ class YellowViewController: UIViewController {
     }
     
     @objc func onDoneButton(sender: UIButton) {
-        self.dismiss(animated: true, completion: nil)
+        if let nc1 = self.navigationController?.navigationController {
+            nc1.popViewController(animated: true)
+        } else {
+            self.dismiss(animated: true, completion: nil)
+        }
     }
         
     private func setNavigationBar() {

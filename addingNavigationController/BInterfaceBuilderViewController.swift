@@ -23,8 +23,8 @@ class BInterfaceBuilderViewController: UIViewController {
     }
     
     @objc func onNextButton(sender: UIButton) {
-        let yellowVC = YellowViewController()
-        self.navigationController?.pushViewController(yellowVC, animated: true)
+        let CViewController = CViewController()
+        self.navigationController?.pushViewController(CViewController, animated: true)
         //        yellowVC.modalPresentationStyle = .currentContext
         //        viewControllerWithNC.present(yellowVC, animated: true)
     }

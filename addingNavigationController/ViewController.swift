@@ -18,12 +18,14 @@ class ViewController: UIViewController {
     @IBAction func onPresentButton(_ sender: Any) {
         let vc = AViewController()
         self.present(vc, animated: true)
+//        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func onByInterfaceBuilderButton(_ sender: Any) {
         if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AInterfaceBuilderViewController") as? AInterfaceBuilderViewController {
             self.present(vc, animated: true)
-
-        }    }
+//            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
 }
 

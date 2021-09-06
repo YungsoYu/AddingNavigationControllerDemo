@@ -15,7 +15,6 @@ class AViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = .white
         addViewController()
         setNavigationBar()
     }
@@ -28,6 +27,7 @@ class AViewController: UIViewController {
     
     private func addViewController() {
         // 1. B뷰컨트롤러가 root인 내비게이션컨트롤러 생성
+        BViewController.view.backgroundColor = .red
         let navigationController = UINavigationController(rootViewController: BViewController)
         // 2. A뷰컨트롤러에 내비게이션컨트롤러 추가
         self.addChild(navigationController)
@@ -37,10 +37,8 @@ class AViewController: UIViewController {
     
     @objc func onNextButton(sender: UIButton) {
         // 3. B뷰컨트롤러에서 push/present
-        let yellowVC = YellowViewController()
-        BViewController.navigationController?.pushViewController(yellowVC, animated: true)
-//        yellowVC.modalPresentationStyle = .currentContext
-//        viewControllerWithNC.present(yellowVC, animated: true)
+        let CViewController = CViewController()
+        BViewController.navigationController?.pushViewController(CViewController, animated: true)
     }
     
     private func setNavigationBar() {
